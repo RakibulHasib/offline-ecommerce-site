@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script src="listing.js"></script>
+    <script src="searching.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <h1>বই<span style="color:crimson">পোকা.com</span></h1>
+            <img src="Images/bann.jpg" />
+            <ul>
+                <li>
+                    <a href="#categori">Categories</a>
+                    <ul>
+                        <li><a href="stories.html">Stories Book</a></li>
+                        <li><a href="novel.html">Novel Book</a></li>
+                        <li><a href="poem.html">Poem Book</a></li>
+                        <li><a href="rhymes.html">Rhymes Book</a></li>
+                        <li><a href="historical.html">Historical Book</a></li>
+                        <li><a href="political.html">Political Book</a></li>
+                    </ul>
+                </li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="help.html">Help?</a></li>
+                <li>
+                    <a href="#" id="cart-box">Cart(<span id="cart-count">0</span>)</a>
+                </li>
+            </ul>
+
+        </div>
+        <div id="middle1">
+            <div class="space"></div>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search product name here..." onkeyup="search()">
+        </div>
+        <div class="middle2" id="middle2">
+
+        </div>
+        <div id="bottom">
+            <p>
+                Boipoka.com is now one of the leading e-commerce organizations in Bangladesh.
+            </p>
+            <p>&copy2022বইপোকা.com</p>
+        </div>
+    </div>
+
+
+
+    <!--Starting of float cart-->
+    <div class="cart-option" id="cart-option">
+        <div class="cart-head">
+            <h4>Added product list</h4>
+        </div>
+        <div id="all-cart-body" class="all-cart-body">
+
+            <!--Data will load from add to cart button clicked in listing.js-->
+
+            <!--<div class="cart-body">
+                <img src="Images/2.jpg" alt="" />
+                <p id="p1">Harry Potter</p>
+                <p id="p2">400 tk</p>
+                <button class="item-delete">Delete</button>
+            </div>-->
+
+        </div>
+        <div class="cart-footer">
+            <a href="order.html">
+                <button type="button">Place Order</button>
+            </a>
+        </div>
+    </div>
+
+    <!--Ending of floating cart-->
+</body>
+</html>

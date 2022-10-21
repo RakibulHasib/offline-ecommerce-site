@@ -1,0 +1,111 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .container{
+            width:500px;
+            height:450px;
+            margin:0 auto;
+            background-color:antiquewhite;
+            font-size:1.5rem;
+        }
+        h2{
+            margin-left:15px;
+            margin-top:10px;
+           
+        }
+        label{
+            margin-left:25px;
+        }
+        #area {
+            width: 175px;
+            margin-left: 191px;
+        }
+        input{
+            margin-left:100px;
+        }
+        #apartment{
+            margin-left:50px;
+        }
+        #name{
+            margin-left:180px;
+        }
+        #pnumber{
+            margin-left:90px;
+        }
+        #payment{
+            margin-left:75px;
+            width:170px;
+        }
+        button {
+            margin-top: 15px;
+            margin-left: 210px;
+            padding: 10px 30px;
+            background-color:forestgreen;
+            color:white;
+            font-weight:bold;
+            border:none;
+            border-radius:10px;
+        }
+        button:hover{
+            background-color:gray;
+        }
+        .container a {
+            text-decoration: none;
+            background-color: cadetblue;
+            color: white;
+            margin-left: 5px;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+        .container a:hover{
+            background-color:gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="MainPage.html">Home</a>
+        <h2>Give a delivary address</h2>
+        <label>Street Address :</label>
+        <input type="text" /><br />
+        <label>Area :</label>
+        <select name="area" id="area">
+            <option>Banani</option>
+            <option>Mohammadpur</option>
+            <option>Uttara</option>
+            <option>Mirpur</option>
+            <option>Bonosri</option>
+            <option>Azimpur</option>
+            <option>Dhanmondi</option>
+            <option>Ghulsan</option>
+            <option>Badda</option>
+        </select><br />
+        <label>Floor Number :</label>
+        <input type="number" name="number" value="0" /><br />
+        <label>Apartment Number :</label>
+        <input type="number" name="number" id="apartment" value="0" /><br />
+        <label>Name :</label>
+        <input type="text" id="name" /><br />
+        <label>Phone Number :</label>
+        <input type="text" id="pnumber" />
+        <h2>Choose Payment System</h2>
+        <label>Payment System :</label>
+        <select name="payment" id="payment">
+            <option>Cash on delivary</option>
+            <option>Bkash</option>
+            <option>Rocket</option>
+            <option>Credit card</option>
+        </select><br />
+        <button id="confirm">Confirm</button>
+    </div>
+    <script>
+        document.getElementById("confirm").addEventListener("click", function () {
+            var result = confirm("Are you sure to order?");
+            if (result == true) {
+                alert("Succesfully order done!!")
+            }
+        });
+    </script>
+</body>
+</html>

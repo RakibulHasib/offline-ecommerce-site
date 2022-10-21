@@ -1,0 +1,271 @@
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#container {
+    width: 960px;
+}
+
+h1 {
+    position: absolute;
+    padding-left: 20px;
+    color: white;
+}
+
+#top {
+    position: fixed;
+    width: 960px;
+    height: 150px;
+}
+
+    #top img {
+        width: 960px;
+        height: 100px;
+    }
+
+#search-container input {
+    width: 500px;
+    padding: 10px;
+    margin-left: 225px;
+    margin-top: 10px;
+}
+
+#search-container {
+    padding: 10px;
+    /*position: fixed;*/
+}
+
+#middle1 {
+    width: 960px;
+}
+
+ul {
+    text-align: center;
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul li {
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        padding: 7px 38.9px;
+        background-color: lightblue;
+    }
+
+        ul li a {
+            text-decoration: none;
+            padding: 25px 20px;
+            color: black;
+            font-size: 20px;
+        }
+
+        ul li:hover {
+            background: #aaa;
+            color: white;
+        }
+
+    ul ul {
+        padding: 0;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 214px;
+        display: none;
+        visibility: hidden;
+    }
+
+        ul ul li {
+            background: LightCyan;
+            display: block;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+            ul ul li:hover {
+                background-color: #aaa;
+            }
+
+    ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    ul ul li:hover li {
+        display: block;
+    }
+
+.middle2 {
+    width: 960px;
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Product-item {
+    width: 150px;
+    height: 280px;
+    background-color: lightblue;
+    margin: 30px 18.5px 0px 18.5px;
+    border-radius: 5px;
+    box-shadow: silver;
+    text-align: center;
+}
+
+#bottom {
+    width: 960px;
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+}
+
+    #bottom p {
+        padding: 5px;
+    }
+
+.space {
+    width: 960px;
+    height: 150px;
+    background-color: white;
+}
+
+#btncart {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+    #btncart:hover {
+        background-color: darkgray;
+    }
+
+/*Float cart css*/
+.cart-option {
+    position: fixed;
+    top: 150px;
+    right: 197px;
+    width: 260px;
+    height: 410px;
+    background-color: cadetblue;
+    margin-left: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateX(200%);
+    transition: all .5s ease;
+}
+.cart-option.sidebar-open{
+    transform: none;
+}
+.cart-head {
+    width: 260px;
+    height: 50px;
+    background-color: darksalmon;
+}
+
+    .cart-head h4 {
+        color: white;
+        float: left;
+        font-size: 1.5rem;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .cart-head button {
+        background-color: red;
+        color: white;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+        padding: 10px 5px;
+        border: none;
+    }
+
+        .cart-head button:hover {
+            background-color: gray;
+        }
+
+.cart-body {
+    width: 260px;
+    height: 70px;
+    background-color: aquamarine;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+    .cart-body img {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 12px;
+        margin-top: 9px;
+        margin-right: 5px;
+    }
+
+    .cart-body #p1 {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 5px;
+        margin-top: 11px;
+    }
+
+    .cart-body #p2 {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-left: 5px;
+        margin-top: 11px;
+    }
+
+    .cart-body button {
+        width: 50px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-weight: 700;
+        margin-top: 18px;
+        margin-left: 10px;
+        margin-right: 2px;
+    }
+
+        .cart-body button:hover {
+            background-color: gray;
+        }
+
+.all-cart-body {
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    float: left;
+    overflow-y: scroll;
+}
+
+.cart-footer {
+    width: 260px;
+    height: 50px;
+    text-align: center;
+}
+
+    .cart-footer button {
+        padding: 5px 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: yellow;
+        color: black;
+        font-weight: 700;
+    }
+
+        .cart-footer button:hover {
+            background-color: gray;
+        }
+
+/*end float cart css*/
